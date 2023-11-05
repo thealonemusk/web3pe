@@ -12,13 +12,11 @@ const Services = () => {
     { name: 'Electricity Bill', icon: '⚡' },
     { name: 'Water Bill', icon: '💧' },
   ];
-
   const handleServiceClick = (service) => {
-    if (selectedService === service) {
-      setSelectedService(null); // Close the form if the same service is clicked
+    if (selectedService === service.name) {
+      setSelectedService(null); // If the clicked service is already selected, deselect it
     } else {
-      setSelectedService(service); // Open the form for a different service
-      handleChange({ target: { value: service.name } }, 'keyword');
+      setSelectedService(service.name); // Otherwise, select the clicked service
     }
   };
 
