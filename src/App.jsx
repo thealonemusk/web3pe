@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Navbar, Welcome, Footer, Transactions } from './components'
+import { Navbar, Welcome, Services , Footer, Transactions  } from './components'
 
 const App = () => {
   const [count, setCount] = useState(0)
@@ -10,6 +10,7 @@ const App = () => {
         <Navbar />
         <Welcome />
       </div>
+      <Services />
       <Transactions />
       <Footer />
     </div>
