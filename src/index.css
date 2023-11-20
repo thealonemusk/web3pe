@@ -69,8 +69,8 @@ body {
 .text-gradient {
   background-color: rgba(255, 255, 255, 0.05);
   background-image: radial-gradient(at 4% 36%,rgba(255, 255, 255, 0.05);0, transparent 53%), radial-gradient(at 100% 60%, rgb(0, 0, 0) 0, transparent 50%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* -webkit-background-clip : text;
+  -webkit-text-fill-color: transparent; */
 }
 
 .services-container {
@@ -84,20 +84,12 @@ body {
   margin: 1%;
   box-sizing: border-box;
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0.2);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   background: black;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-}
-element {
-  color-adjust: economy;
-}
+  border: 1px solid rgba(0, 0,0.3);}
 
-/* After */
-element {
-  print-color-adjust: economy;
-}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
